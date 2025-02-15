@@ -12,7 +12,7 @@
     <!-- Chat input area - fixed at bottom -->
     <footer class="fixed bottom-0 left-0 w-full bg-white border-t">
         <div class="max-w-4xl mx-auto p-4">
-            <form hx-post="/send" 
+            <form hx-post="/chat/send" 
                   hx-target="#chat-messages" 
                   hx-swap="beforeend"
                   hx-on::after-request="this.reset(); document.getElementById('chat-container').scrollTop = document.getElementById('chat-container').scrollHeight"
